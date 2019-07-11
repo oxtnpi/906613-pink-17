@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Туренко](https://up.htmlacademy.ru/adaptive/17/user/906613).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://up.htmlacademy.ru/htmlcss/25/user/252055).
 
 ---
 

@@ -9,10 +9,10 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" width="320" height="69" src="http://placehold.it/320x69" alt="Логотип Пинк">
-    </a>
     <nav class="page-header__menu main-menu">
+        <a class="page-header__logo">
+            <img class="page-header__logo-image" width="320" height="69" src="http://placehold.it/320x69" alt="Логотип Пинк">
+          </a>
       <button class="main-menu__toggle" type="button">Открыть меню</button>
       <div class="main-menu__wrapper">
         <ul class="main-menu__list">
@@ -34,9 +34,10 @@
       <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
         хватает ваших?</p>
 
-      <div class="gallery__item photo">
+      <article class="gallery__item photo photo--general">
+        <h3 class="visually-hidden">Лучшее фото</h3>
         <span class="photo__bage">Панорама дня</span>
-
+        
         <img class="photo__img" width="320" height="137" src="http://placehold.it/320x137" alt="Лучшее фото">
 
         <div class="photo__description">
@@ -49,9 +50,10 @@
             <span class="likes__counter">Нравится: 215</span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="gallery__item photo">
+      <article class="gallery__item photo">
+          <h3 class="visually-hidden">Фото</h3>
         <img class="photo__img" width="280" height="180" src="http://placehold.it/280x180" alt="Фото">
         <div class="photo__description">
           <span class="photo__autor">Левон</span>
@@ -62,9 +64,10 @@
             <span class="likes__counter">Нравится: 356</span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="gallery__item photo">
+      <article class="gallery__item photo">
+          <h3 class="visually-hidden">Фото</h3>
         <img class="photo__img" width="280" height="180" src="http://placehold.it/280x180" alt="Фото">
         <div class="photo__description">
           <span class="photo__autor">Антон</span>
@@ -75,9 +78,10 @@
             <span class="likes__counter">Нравится: 666</span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="gallery__item photo">
+      <article class="gallery__item photo">
+          <h3 class="visually-hidden">Фото</h3>
         <img class="photo__img" width="280" height="180" src="http://placehold.it/280x180" alt="Фото">
         <div class="photo__description">
           <span class="photo__autor">Борис</span>
@@ -88,9 +92,10 @@
             <span class="likes__counter">Нравится: 215</span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="gallery__item photo">
+      <article class="gallery__item photo">
+          <h3 class="visually-hidden">Фото</h3>
         <img class="photo__img" width="280" height="180" src="http://placehold.it/280x180" alt="Фото">
         <div class="photo__description">
           <span class="photo__autor">Сергей</span>
@@ -101,9 +106,10 @@
             <span class="likes__counter">Нравится: 4</span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="gallery__item photo">
+      <article class="gallery__item photo">
+          <h3 class="visually-hidden">Фото</h3>
         <img class="photo__img" width="280" height="180" src="http://placehold.it/280x180" alt="Фото">
         <div class="photo__description">
           <span class="photo__autor">Максим</span>
@@ -114,9 +120,10 @@
             <span class="likes__counter">Нравится: 150</span>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div class="gallery__item photo">
+      <article class="gallery__item photo">
+          <h3 class="visually-hidden">Фото</h3>
         <img class="photo__img" width="280" height="180" src="http://placehold.it/280x180" alt="Фото">
         <div class="photo__description">
           <span class="photo__autor">Надежда</span>
@@ -127,9 +134,7 @@
             <span class="likes__counter">Нравится:2560</span>
           </div>
         </div>
-      </div>
-
-      <p class="gellery__message">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      </article>
     </section>
   </main>
 

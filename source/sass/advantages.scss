@@ -1,0 +1,31 @@
+.advantages {
+  background-color: $white-origin;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    background-color: $white-origin;
+    list-style: none;
+  }
+
+  &__item {
+    text-align: center;
+    width: 252px;
+    height: 99px;
+  }
+
+  &__item-title {
+    font-family: "Arial", "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    color: $dark;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    color: $dark-two;
+  }
+}

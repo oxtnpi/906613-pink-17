@@ -1,0 +1,16 @@
+.likes {
+  &__button {
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__counter {
+    font-size: 12px;
+    line-height: 24px;
+    color: $lipstick;
+  }
+}

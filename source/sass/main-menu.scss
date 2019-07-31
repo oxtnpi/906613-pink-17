@@ -1,0 +1,63 @@
+.main-menu {
+  width: 320px;
+  background-color: $blue-origin;
+  color: $white-15;
+
+  &__wrapper {
+    padding: 20px;
+    width: 320px;
+    height: 63px;
+    box-shadow: 0 1px 0 0 $black;
+    margin-bottom: 1px;
+  }
+
+  &__logo {
+    width: 75px;
+    height: 22px;
+  }
+
+  &__toggle {
+    width: 24px;
+    height: 23px;
+    background-image: url("../img/icon-menu-cross.svg");
+    border: none;
+    background-color: transparent;
+  }
+
+  &__list {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: $blue-origin;
+  }
+
+  &__item {
+    box-sizing: content-box;
+    box-shadow: 0 1px 0 0 $black, inset 0 1px 0 0 $white-15;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    width: 320px;
+    height: 63px;
+    background-color: $blue-origin;
+  }
+
+  &__link {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 320px;
+    height: 63px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Arial", "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    text-transform: uppercase;
+    background-color: $blue-origin;
+  }
+}

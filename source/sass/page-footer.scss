@@ -1,9 +1,8 @@
 .page-footer {
   width: 320px;
   background-color: $white;
-
-  &__logo {
-    width: 147px;
-    height: 40px;
-  }
+}
+.page-footer__logo {
+  width: 147px;
+  height: 40px;
 }

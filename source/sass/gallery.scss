@@ -1,12 +1,11 @@
 .gallery {
   background-color: $white;
-
-  &__text {
-    width: 241px;
-    font-size: 14px;
-    font-weight: 300;
-    text-align: center;
-    line-height: 30px;
-    color: $dark-two;
-  }
+}
+.gallery__text {
+  width: 241px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 30px;
+  color: $dark-two;
 }

@@ -1,27 +1,29 @@
-.photo {
-  &__img {
-    width: 320px;
-    height: 137px;
-  }
+.photo__img {
+  width: 320px;
+  height: 137px;
+}
 
-  &__description {
-    width: 280px;
-    background-color: $white-origin;
-    font-size: 14px;
-    line-height: 24px;
-    color: $dark-two;
-  }
+.photo__description {
+  width: 280px;
+  background-color: $white-origin;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-two;
+}
 
-  &__autor {
-    font-weight: bold;
-  }
+.photo__autor {
+  font-weight: 700;
+}
 
-  &__time {
-    font-weight: 300;
-  }
+.photo__time {
+  font-weight: 300;
+}
 
-  &__comment {
-    font-size: 12px;
-    font-weight: 300;
-  }
+.photo__comment {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.photo__title {
+  width: 168px;
 }

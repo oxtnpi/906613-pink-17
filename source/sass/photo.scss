@@ -1,0 +1,29 @@
+.photo__img {
+  width: 320px;
+  height: 137px;
+}
+
+.photo__description {
+  width: 280px;
+  background-color: $white-origin;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-two;
+}
+
+.photo__autor {
+  font-weight: 700;
+}
+
+.photo__time {
+  font-weight: 300;
+}
+
+.photo__comment {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.photo__title {
+  width: 168px;
+}

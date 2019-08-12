@@ -1,5 +1,13 @@
 .main {
   width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.main__wrapper {
+  margin-bottom: 20px;
 }
 
 .main__text {
@@ -8,6 +16,9 @@
   line-height: 24px;
   text-align: center;
   color: $dark-two;
+  padding-top: 24px;
+  padding-bottom: 15px;
+  margin: 0;
 }
 
 .main__container {
@@ -16,4 +27,23 @@
   background-repeat: no-repeat;
   width: 157px;
   height: 320px;
+  margin-left: 83px;
+}
+
+.main__gallery {
+  width: 100%;
+}
+
+@media (min-width:$tablet-width) {
+  .main {
+    width: 660px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+    width: auto;
+    margin: 0 auto;
+  }
 }

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/css/normalize.css" rel="stylesheet">
   <link href="/css/style.css" rel="stylesheet">
   <title>HTML Academy: Пинк</title>
@@ -11,24 +12,30 @@
 <body>
 
   <header class="page-header">
+
     <nav class="page-header__menu main-menu">
       <div class="main-menu__wrapper">
-        <a class="main-menu__logo" href="index.html">
-          <img class="main-menu__logo-image" width="75" height="22" src="img/logo-pink-white-mobile.svg"
-            alt="Логотип Пинк">
-        </a>
-        <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-menu__top-bar">
+          <a class="main-menu__logo">
+            <img class="main-menu__logo-image" width="75" height="22" src="img/logo-pink-white-mobile.svg"
+              alt="Логотип Пинк">
+          </a>
+          <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a class="main-menu__link">Главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#">Html Academy</a></li>
+        </ul>
       </div>
-      <ul class="main-menu__list">
-        <li class="main-menu__item"><a class="main-menu__link">Главная</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фотографии</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="form.html">Конкурс</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">Html Academy</a></li>
-      </ul>
-      <div class="page-header__container page-header__container--main">
+    </nav>
+    <div class="page-header__container page-header__container--main">
+      <p class="page-header__content">Взгляните на жизнь иначе!</p>
       <div class="page-header__img"></div>
     </div>
-    </nav>
+
+
 
     <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
 
@@ -55,10 +62,11 @@
   </header>
 
   <main class="page-main main">
-    <p class="main__text">Устали от серости мегаполиса?</p>
+    <div class="main__wrapper">
+      <p class="main__text">Устали от серости мегаполиса?</p>
 
-    <p class="main__text">Нам есть, что вам предложить!</p>
-
+      <p class="main__text">Нам есть, что вам предложить!</p>
+    </div>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества продукта</h2>
       <ul class="advantages__list">

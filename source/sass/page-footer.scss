@@ -1,6 +1,7 @@
 .page-footer {
-  width: 320px;
+  min-width: 320px;
   background-color: $white;
+  display: flex;
 }
 .page-footer__logo {
   width: 147px;

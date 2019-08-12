@@ -1,14 +1,19 @@
 .main-menu {
-  width: 320px;
+  width: $mobile-width;
+  margin: auto;
   background-color: $blue-origin;
   color: $white-15;
 }
-.main-menu__wrapper {
+
+.main-menu__top-bar {
+  display: flex;
+  justify-content:space-between;
   padding: 20px;
-  width: 320px;
   height: 63px;
   box-shadow: 0 1px 0 0 $black;
   margin-bottom: 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-menu__logo {
@@ -25,38 +30,64 @@
 }
 
 .main-menu__list {
-  width: 320px;
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: $blue-origin;
 }
 
 .main-menu__item {
   box-sizing: content-box;
-  box-shadow: 0 1px 0 0 $black, inset 0 1px 0 0 $white-15;
   margin: 0;
   padding: 0;
   padding-bottom: 1px;
   margin-bottom: 1px;
-  width: 320px;
-  height: 63px;
-  background-color: $blue-origin;
 }
 
 .main-menu__link {
   margin: 0;
-  padding: 0;
+  padding: 15px 22px;
   display: block;
-  width: 320px;
-  height: 63px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  font-family: "Arial", "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
   text-transform: uppercase;
-  background-color: $blue-origin;
+  box-shadow: 0 1px 0 0 $black, inset 0 1px 0 0 $white-15;
 }
+//не работает подчеркивание на последнем блоке??
+ @media (min-width:$tablet-width) {
+   .main-menu {
+    width:$tablet-width;
+    margin: 0 auto;
+   }
+
+   .main-menu__top-bar {
+    height: 110px;
+    align-items: center;
+   }
+ }
+
+ @media (min-width:$desktop-width) {
+  .main-menu {
+    width: 100%;
+    margin: 0;
+    background-color:$black-30;
+   }
+
+   .main-menu__wrapper {
+    width: 941px;
+    margin: 0 auto;
+    display: flex;
+   }
+
+   .main-menu__toggle {
+     display: none;
+   }
+
+   .main-menu__list {
+     display: flex;
+     width: 621px;
+   }
+ }

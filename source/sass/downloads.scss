@@ -48,13 +48,16 @@
 @media (min-width:$tablet-width) {
 
   .downloads {
-    position: absolute;
-    bottom: 100px;
-    left: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 22px;
   }
 
   .downloads__wrapper {
+    width: 320px;
     background-color: transparent;
+    padding-left: 0;
   }
 
   .downloads__button {

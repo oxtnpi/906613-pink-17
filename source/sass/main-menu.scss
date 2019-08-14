@@ -3,6 +3,8 @@
   margin: auto;
   background-color: $blue-origin;
   color: $white-15;
+  z-index: 10;
+  position: relative;
 }
 
 .main-menu__top-bar {

@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-.social__link{
+.social__link {
   width: 46px;
   height: 46px;
   border: 3px solid $dark-two-10;
@@ -37,7 +37,7 @@
   height: 13px;
 }
 
-@media (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .social {
     margin: 0;
     margin-right: 20px;
@@ -45,7 +45,7 @@
 }
 
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .social__link:hover {
     border: 3px solid $dark-two;
     border-radius: 50px;
@@ -54,6 +54,4 @@
   .social__link:active {
     opacity: 0.1;
   }
-
-
 }

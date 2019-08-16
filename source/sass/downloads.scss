@@ -79,6 +79,29 @@
 }
 
 @media (min-width: $desktop-width) {
+  .downloads {
+    margin: 0;
+    margin-top: 52px;
+    padding: 0;
+  }
+
+  .downloads__button {
+    font-size: 21px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 12px 24px 16px 32px;
+    margin: 0;
+    margin-bottom: 57px;
+  }
+
+  .downloads__list  {
+    margin-bottom: 26px;
+  }
+
+  .downloads__description {
+    margin-left: 5px;
+  }
+
   .downloads__button:hover {
     box-shadow: 0 5px 7px 0 rgba(1, 1, 1, 0.75);
     border: solid 3px #ffffff;

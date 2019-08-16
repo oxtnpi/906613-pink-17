@@ -46,6 +46,12 @@
 
 
 @media (min-width: $desktop-width) {
+  .social {
+    margin-right: 2px;
+    margin-top: 4px;
+    margin-left: 14px;
+  }
+
   .social__link:hover {
     border: 3px solid $dark-two;
     border-radius: 50px;

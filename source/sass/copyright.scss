@@ -27,6 +27,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .copyright {
+    width: 160px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 8px;
+  }
+
   .copyright__img:hover {
     fill: $black;
   }

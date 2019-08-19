@@ -1,3 +1,14 @@
+.likes {
+  width: 120px;
+  height: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
 .likes__button {
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
@@ -5,10 +16,39 @@
   height: 12px;
   border: none;
   background-color: transparent;
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
 }
 
 .likes__counter {
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
   color: $lipstick;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .likes {
+    order: 1;
+    width: 240px;
+  }
+
+  .likes__button {
+    order: 2;
+  }
+
+
+  .likes--best {
+    width: 120px;
+    order: 1;
+    margin: 0;
+    margin-right: 11px;
+  }
+
+  .likes__button--best {
+    order: 2;
+  }
 }

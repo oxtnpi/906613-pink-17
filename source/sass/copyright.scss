@@ -1,10 +1,44 @@
 .copyright {
+  width: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   font-size: 14px;
   line-height: 18px;
   color: $dark-two;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
 }
+
 .copyright__img {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  fill: $red;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: 160px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 8px;
+  }
+
+  .copyright__img:hover {
+    fill: $black;
+  }
+
+  .copyright__img:active {
+    opacity: 0.3;
+  }
 }

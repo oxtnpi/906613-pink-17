@@ -10,6 +10,35 @@
   height: 22px;
 }
 
+.logo-image {
+  fill: $white;
+}
+
+.logo:hover .logo-image {
+  fill: $lipstick;
+}
+
+.logo:active .logo-image {
+  fill: $white;
+  opacity: 0.3;
+}
+
+.logo-image__footer--glasses {
+  fill: $dark-two;
+}
+
+.logo__footer:hover .logo-image__footer--glasses {
+  fill: $lipstick;
+}
+
+.logo__footer:active .logo-image__footer--glasses {
+  fill: $dark-two;
+}
+
+.logo__footer:active .logo-image__footer {
+  opacity: 0.3;
+}
+
 .logo-image--tablet {
   display: none;
 }

@@ -43,6 +43,8 @@
 @media (min-width: $desktop-width) {
   .gallery {
     width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 
   .gallery__text {

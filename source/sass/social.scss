@@ -32,6 +32,15 @@
   height: 18px;
 }
 
+.social__link:hover {
+  border: 3px solid $dark-two;
+  border-radius: 50px;
+}
+
+.social__link:active {
+  opacity: 0.1;
+}
+
 .social__icon--youtube {
   width: 15px;
   height: 13px;
@@ -50,14 +59,5 @@
     margin-right: 2px;
     margin-top: 4px;
     margin-left: 14px;
-  }
-
-  .social__link:hover {
-    border: 3px solid $dark-two;
-    border-radius: 50px;
-  }
-
-  .social__link:active {
-    opacity: 0.1;
   }
 }

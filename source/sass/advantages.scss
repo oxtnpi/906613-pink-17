@@ -66,6 +66,7 @@
   .advantages {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .advantages::before {
@@ -113,10 +114,11 @@
     background-repeat: no-repeat;
     background-position-y: 33px;
     width: 268px;
-    height: 547px;
+    height: 514px;
     margin: 0;
     margin-left: 20px;
     padding: 0;
+    order: 1;
   }
 
   .advantages__wrapper {
@@ -146,11 +148,11 @@
   }
 
   .advantages__list {
-    width: 940px;
+    width: 960px;
     height: 250px;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
+    padding: 0 10px;
     margin: 0 auto;
     margin-bottom: 53px;
   }
@@ -187,10 +189,10 @@
   }
 
   .advantages__container {
-    width: 941px;
+    width: 960px;
     height: 307px;
     background: transparent;
-    padding: 0;
+    padding: 0 10px;
     margin: 0 auto;
     margin-bottom: 10px;
   }

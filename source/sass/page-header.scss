@@ -9,9 +9,10 @@
   height: 396px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   margin-top: -66px;
   padding-top: 66px;
+  z-index: 5;
 }
 
 .page-header__container--photo-page {
@@ -80,18 +81,16 @@
   .page-header__wrapper {
     position: relative;
     width: 660px;
-    height: 684px;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0 auto;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-size: 1200px;
+    background-size: cover;
     background-position-x: center;
     background-position-y: bottom;
     background-repeat: no-repeat;
-    z-index: -2;
-    margin-top: -66px;
+    margin-top: -111px;
   }
 
   .page-header__wrapper--form-page {
@@ -115,6 +114,7 @@
   .page-header__container {
     position: absolute;
     background: transparent;
+    margin-top: -23px;
   }
 
   .page-header__container--form-page {
@@ -156,7 +156,7 @@
     padding: 0;
     margin: 0;
     margin-left: 75px;
-    margin-top: 155px;
+    margin-top: 201px;
   }
 
   .page-header__img {
@@ -166,7 +166,6 @@
     background-repeat: no-repeat;
     width: 660px;
     height: 684px;
-    z-index: -1;
     top: 66px;
     left: 0;
   }
@@ -175,23 +174,24 @@
 @media (min-width: $desktop-width) {
   .page-header {
     position: relative;
-    width: 1200px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    z-index: 5;
-    margin: 0 auto;
   }
 
   .page-header__wrapper {
     display: flex;
-    width: 941px;
+    width: 960px;
     background: transparent;
     margin: 0 auto;
+    padding: 0 10px;
     margin-top: 10px;
+    overflow: hidden;
   }
 
   .page-header__wrapper--form-page {
@@ -209,12 +209,12 @@
   }
 
   .page-header__container--form-page {
-    width: 940px;
+    width: 960px;
     height: 111px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 0 10px;
     margin: 0;
   }
 
@@ -250,14 +250,14 @@
     background-repeat: no-repeat;
     width: 1054px;
     height: 684px;
-    z-index: -1;
     top: 0;
     left: 16px;
   }
 
   .page-header__wrapper--photo-page {
-    width: 940px;
+    width: 960px;
     height: 224px;
+    padding: 0 10px;
   }
 
   .page-header__title--photo-page {

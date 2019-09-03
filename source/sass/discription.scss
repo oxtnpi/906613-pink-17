@@ -33,6 +33,14 @@
   margin-bottom: 50px;
 }
 
+.discription__text:hover {
+  border: solid 2px $dark-two;
+}
+
+.discription__text:active {
+  border: solid 2px $lipstick;
+}
+
 @media (min-width: $tablet-width) {
   .discription {
     width: 620px;

@@ -34,6 +34,7 @@
 }
 
 .filter__button--add {
+  background-color: transparent;
   border: solid 3px $lipstick;
   color: $lipstick;
   margin-bottom: 10px;
@@ -44,6 +45,26 @@
   color: $dark-two;
   border: solid 3px $dark-two;
   margin-bottom: 41px;
+}
+
+.filter__button--add:hover {
+  background-color: $lipstick;
+  color: $white;
+}
+.filter__button--add:active {
+  color: $grey-button-text;
+}
+
+.filter__button--delete:hover {
+  border: solid 3px $dark-two;
+  opacity: 0.3;
+  color: $grey-button-text-30;
+}
+
+.filter__button--delete:active {
+  border: solid 3px $dark-two;
+  background-color: $dark-two;
+  color: $grey-button-text;
 }
 
 @media (min-width: $tablet-width) {

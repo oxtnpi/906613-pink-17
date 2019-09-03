@@ -18,6 +18,7 @@
   margin-top: 40px;
   margin-bottom: 10px;
 }
+
 .feedback__author-about {
   display: none;
 }
@@ -52,13 +53,15 @@
   .feedback__wrapper {
     order: 2;
   }
-  .feedback__author{
+
+  .feedback__author {
     font-size: 20px;
     margin: 0;
     padding: 0;
   }
 
   .feedback__author-about {
+    display: block;
     font-size: 14px;
     line-height: 30px;
     text-align: center;
@@ -70,7 +73,7 @@
   .feedback__text {
     display: block;
     width: 620px;
-    order:-1;
+    order: -1;
     font-size: 18px;
     margin-bottom: 35px;
   }
@@ -81,6 +84,8 @@
 
   .feedback__bullets {
     margin-top: 43px;
+
+    order: 5;
   }
 }
 
@@ -90,11 +95,12 @@
     margin-top: 49px;
     position: relative;
   }
+
   .feedback__wrapper {
     margin-bottom: 55px;
   }
 
-  .feedback__author{
+  .feedback__author {
     font-size: 24px;
   }
 
@@ -117,6 +123,7 @@
       background-image: url(../img/icon-quotes.svg);
     }
   }
+
   .feedback__buttons {
     display: block;
     background: none;
@@ -148,5 +155,4 @@
   .feedback__bullets {
     display: none;
   }
-
 }

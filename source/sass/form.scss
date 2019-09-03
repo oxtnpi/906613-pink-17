@@ -39,6 +39,15 @@
   text-transform: uppercase;
 }
 
+.form__button:hover {
+  border: solid 2px $green-button;
+  background-color: $green-button;
+}
+
+.form__button:active {
+  color: $grey-button-text;
+}
+
 .form__message{
   width: 183px;
   display: block;
@@ -48,7 +57,7 @@
   color: $dark-two;
   margin: 0 auto;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 17px;
 }
 
 .form__symbol {

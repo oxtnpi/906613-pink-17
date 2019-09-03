@@ -37,6 +37,13 @@
   margin-bottom: 17px;
 }
 
+.name__input:hover {
+  border: solid 2px $dark-two;
+}
+.name__input:active {
+  border: solid 2px $lipstick;
+}
+
 @media (min-width: $tablet-width) {
   .name {
     width: 620px;

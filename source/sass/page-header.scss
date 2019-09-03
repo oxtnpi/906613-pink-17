@@ -6,7 +6,7 @@
 .page-header__container {
   width: 320px;
   margin: 0 auto;
-  height: 396px;
+  height: 463px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +14,10 @@
   padding-top: 66px;
   z-index: 5;
 }
-
+.page-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
 .page-header__container--photo-page {
   width: 320px;
   height: 237px;
@@ -36,7 +39,7 @@
 
 .page-header__container--form-page {
   width: 320px;
-  height: 230px;
+  height: 238px;
   display: flex;
   margin: 0 auto;
   margin-top: -66px;
@@ -44,14 +47,15 @@
 }
 
 .page-header__title--form-page {
-  width: 226px;
+  width: 228px;
   height: 82px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  line-height: 24px;
+  line-height: 29px;
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 29px;
 }
 
 .page-header__img {
@@ -95,15 +99,15 @@
 
   .page-header__wrapper--form-page {
     width: 660px;
-    height: 393px;
+    height: 439px;
     background-position-x: center;
-    background-position-y: top;
-    background-size: 660px;
+    background-position-y: 44px;
+    background-size: cover;
   }
 
   .page-header__wrapper--photo-page {
     width: 660px;
-    height: 396px;
+    height: 440px;
     background-position-x: center;
     background-position-y: top;
     display: flex;
@@ -132,7 +136,7 @@
     color: #ffffff;
     padding: 0;
     margin: 0;
-    margin-top: 55px;
+    margin-top: 34px;
   }
 
 
@@ -142,7 +146,7 @@
     font-size: 50px;
     font-weight: 300;
     line-height: 59px;
-    margin-top: 45px;
+    margin-top: 75px;
   }
 
   .page-header__content {

@@ -119,24 +119,27 @@
     </section>
     <section class="feedback">
       <h2 class="visually-hidden">Отзывы</h2>
-      <h3 class="fedback__name">Николай Петров</h3>
-      <p class="feedback__text">
-        «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-        познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-      </p>
-      <ul class="feedback__bullets">
-        <li class="bullets__item bullets__item--active"><button><span>1</span></button></li>
-        <li class="bullets__item"><button><span>2</span></button></li>
-        <li class="bullets__item"><button><span>3</span></button></li>
-      </ul>
+      <div class="feedback__wrapper">
+      <h3 class="feedback__author">Николай Петров</h3>
+      <span class="feedback__author-about">25 лет, водитель трамвая</span>
+    </div>
+      <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+        вещи! А еще я
+        познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <button class="feedback__buttons feedback__buttons--before"><span class="visually-hidden">Назад</span></button>
+        <button class="feedback__buttons feedback__buttons--after"><span class="visually-hidden">Вперед</span></button>
+      <div class="feedback__bullets bullets">
+          <button class="bullets__button bullets__button--active"><span class="visually-hidden">1</span></button>
+          <button class="bullets__button"><span class="visually-hidden">2</span></button>
+          <button class="bullets__button"><span class="visually-hidden">3</span></button>
+         </div>
     </section>
     <section class="table">
       <h2 class="visually-hidden">Таблица цен</h2>
       <table class="table-price">
         <thead>
           <tr>
-            <th class="table-price__header">
-
+            <th class="table-price__header table-price__header--empty">
             </th>
             <th class="table-price__header">
               <span class="table-price__payment-type">База</span>
@@ -153,21 +156,42 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody class="table__body">
           <tr>
             <td class="table-price__cell">Розовый фильтр</td>
-            <td class="table-price__cell">
+            <td class="table-price__cell table-price__checked">
               <div class="table-price__check--true">
+                <svg class="table-price__check-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
                 <span class="visually-hidden">Да</span>
               </div>
             </td>
-            <td class="table-price__cell">
+            <td class="table-price__cell table-price__checked">
               <div class="table-price__check--true">
+                <svg class="table-price__check-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
                 <span class="visually-hidden">Да</span>
               </div>
             </td>
-            <td class="table-price__cell">
+            <td class="table-price__cell table-price__checked">
               <div class="table-price__check--true">
+                <svg class="table-price__check-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
                 <span class="visually-hidden">Да</span>
               </div>
             </td>
@@ -175,18 +199,38 @@
 
           <tr>
             <td class="table-price__cell">Смайлики</td>
-            <td class="table-price__cell">
+            <td class="table-price__cell table-price__checked">
               <div class="table-price__check--false">
+                <svg class="table-price__check-img--false" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px"
+                  viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path
+                    d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+                </svg>
                 <span class="visually-hidden">Нет</span>
               </div>
             </td>
-            <td class="table-price__cell">
+            <td class="table-price__cell table-price__checked">
               <div class="table-price__check--true">
+                <svg class="table-price__check-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
                 <span class="visually-hidden">Да</span>
               </div>
             </td>
-            <td class="table-price__cell">
+            <td class="table-price__cell table-price__checked">
               <div class="table-price__check--true">
+                <svg class="table-price__check-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
                 <span class="visually-hidden">Да</span>
               </div>
             </td>
@@ -194,54 +238,75 @@
 
           <tr>
             <td class="table-price__cell">Комментарии</td>
-            <td class="table-price__cell">
-              <div class="table-price__check--false">
+            <td class="table-price__cell table-price__checked">
+              <div class="table-price__check--false"> <svg class="table-price__check-img--false" version="1.0"
+                  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752"
+                  enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path
+                    d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+                </svg>
                 <span class="visually-hidden">Нет</span>
               </div>
             </td>
-            <td class="table-price__cell">
-              <div class="table-price__check--true">
+            <td class="table-price__cell table-price__checked">
+              <div class="table-price__check--false"> <svg class="table-price__check-img--false" version="1.0"
+                  id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752"
+                  enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path
+                    d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+                </svg>
                 <span class="visually-hidden">Нет</span>
               </div>
             </td>
-            <td class="table-price__cell">
+            <td class="table-price__cell table-price__checked">
               <div class="table-price__check--true">
+                <svg class="table-price__check-img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px"
+                  viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09"
+                  xml:space="preserve">
+                  <path
+                    d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+                </svg>
                 <span class="visually-hidden">Да</span>
               </div>
             </td>
           </tr>
         </tbody>
       </table>
-      <ul class="table__bullets ">
-          <li class="bullets__item bullets__item--active"><button><span>1</span></button></li>
-          <li class="bullets__item"><button><span>2</span></button></li>
-          <li class="bullets__item"><button><span>3</span></button></li>
-        </ul>
+      <div class="table__bullets bullets">
+          <button class="bullets__button "><span class="visually-hidden">1</span></button>
+          <button class="bullets__button bullets__button--active"><span class="visually-hidden">2</span></button>
+          <button class="bullets__button"><span class="visually-hidden">3</span></button>
+         </div>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <h3>Остались вопросы?
-        Свяжитесь с нами!</h3>
+      <div class="contacts__wrapper">
+      <b class="contacts__title">Остались вопросы?
+        Свяжитесь с нами!</b>
       <ul class="contacts__list">
         <li class="contacts__item contacts__phone">
-          <h4>Звоните:</h4>
-          <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
-        </li>
-        <li class="contacts__item contacts__adress">
-          <h4>Приезжайте в гости:</h4>
-          <a>ул. Большая
-            Конюшенная, 19/8</a>
+          <h3 class="contacts__item-title" >Звоните:</h4>
+          <a class="contacts__item-link" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item contacts__e-mail">
-          <h4>Пишите:</h4>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <h3 class="contacts__item-title">Пишите:</h4>
+          <a class="contacts__item-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
+        <li class="contacts__item contacts__adress">
+            <h3 class="contacts__item-title">Приезжайте в гости:</h4>
+            <a class="contacts__item-link">ул. Большая
+              Конюшенная, 19/8</a>
+          </li>
       </ul>
+    </div>
       <div class="contacts__map">
-        <iframe
+        <iframe class="contacts__map-frame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2051.50109404019!2d30.319948761281882!3d59.93648297464309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631056267101b%3A0xa9be6d127c1fcba1!2z0KbQtdC90YLRgCDQuNGB0LrRg9GB0YHRgtCy0LAg0Lgg0LzRg9C30YvQutC4INCm0JPQn9CRINC40LwuINCSLtCSLiDQnNCw0Y_QutC-0LLRgdC60L7Qs9C-!5e0!3m2!1sru!2sru!4v1567165842153!5m2!1sru!2sru"
-          width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </section>
   </main>

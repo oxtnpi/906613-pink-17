@@ -1,0 +1,35 @@
+.bullets {
+  display: flex;
+  justify-content: space-between;
+  width: 68px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.bullets__button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $grey-bullets;
+  padding: 0;
+  margin: 0 4px;
+}
+
+.bullets__item {
+  width: 9px;
+  height: 9px;
+}
+
+.bullets__button--active {
+  border: solid 3px $dark-two;
+  width: 12px;
+  height: 12px;
+  background-color:$white;
+}
+
+.table__bullets {
+  margin: 0 auto;
+  margin-bottom: 42px;
+
+}

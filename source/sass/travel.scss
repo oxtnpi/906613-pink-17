@@ -1,0 +1,88 @@
+.travel {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: $white-origin;
+  position: relative;
+}
+
+.travel__title{
+  width: 219px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $lipstick;
+  background-color: $white-origin;
+  text-transform: uppercase;
+  position: absolute;
+  top: 37px;
+  left: 51px;
+}
+
+.travel__list {
+  margin: 0;
+  margin-top: 115px;
+  margin-left: 38px;
+  list-style: none;
+  padding: 0;
+}
+
+.travel__item {
+  margin-bottom: 52px;
+}
+
+.travel__item-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-two;
+  margin-left: 33px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .travel{
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid $grey-light;
+    order: -7;
+    background-color: $white;
+    margin-bottom: 50px;
+  }
+
+  .travel__title {
+    width: 436px;
+    display: block;
+    position: static;
+    background-color: $white;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  .travel__list {
+   margin-top: 22px;
+   margin-left: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel{
+    width: 940px;
+    height: 239px;
+    margin: 0 auto;
+    order: -7;
+    margin-bottom: 50px;
+  }
+
+  .travel__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 228px;
+   }
+
+}
+

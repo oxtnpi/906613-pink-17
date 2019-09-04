@@ -4,6 +4,7 @@
   position: relative;
   z-index: 10;
   color: $white-15;
+  background-color: $blue-origin;
 }
 
 .main-menu--opened {
@@ -32,7 +33,7 @@
     right: 17px;
 
     width: 36px;
-    height: 2px;
+    height: 3px;
 
 
     background-color: $white;
@@ -258,7 +259,6 @@
     text-transform: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 8px;
     box-shadow: none;
   }
 

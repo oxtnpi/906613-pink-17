@@ -9,8 +9,8 @@
 }
 
 .social__link {
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   border: 3px solid $dark-two-10;
   border-radius: 50px;
   display: flex;
@@ -50,14 +50,14 @@
   .social {
     margin: 0;
     margin-right: 20px;
+    margin-top: 5px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
   .social {
-    margin-right: 2px;
     margin-top: 4px;
-    margin-left: 14px;
+    margin-left: 40px;
   }
 }

@@ -57,6 +57,11 @@
   width: 157px;
   height: 320px;
   margin-left: 83px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
+  }
 }
 
 .advantages__wrapper {
@@ -120,6 +125,11 @@
     margin-left: 20px;
     padding: 0;
     order: 1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px auto;
+    }
   }
 
   .advantages__wrapper {
@@ -186,7 +196,6 @@
     font-weight: 300;
     text-align: center;
     color: #283645;
-
   }
 
   .advantages__container {

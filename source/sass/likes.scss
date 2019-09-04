@@ -45,10 +45,16 @@
     width: 120px;
     order: 1;
     margin: 0;
-    margin-right: 11px;
+    margin-right: 10px;
   }
 
   .likes__button--best {
     order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .likes--best {
+    margin-right: 3px;
   }
 }

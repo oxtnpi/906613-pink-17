@@ -40,6 +40,7 @@
 .name__input:hover {
   border: solid 2px $dark-two;
 }
+
 .name__input:active {
   border: solid 2px $lipstick;
 }
@@ -52,9 +53,9 @@
   }
 
   .name__item {
-   display: flex;
-   align-items: center;
-   margin-bottom: 39px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 39px;
   }
 
   .name__label {
@@ -72,11 +73,11 @@
     height: 60px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .name {
     width: 435px;
     order: -10;
-    margin-bottom: 3px;
     margin: 0;
     padding: 0;
   }
@@ -87,25 +88,24 @@
     margin: 0;
     margin-bottom: 41px;
     padding-top: 14px;
-   }
+  }
 
   .name__item--middle-name {
-     margin-bottom: 4px;
-   }
+    margin-bottom: 4px;
+  }
 
-   .name__label {
-     width: auto;
-     flex-grow: 0;
-     padding: 0;
-     margin: 0;
-     margin-right: 19px;
-   }
+  .name__label {
+    width: auto;
+    flex-grow: 0;
+    padding: 0;
+    margin: 0;
+    margin-right: 19px;
+  }
 
-   .name__input {
-     width: auto;
-     flex-grow: 1;
-     height: 60px;
-     margin: 0;
-   }
-
+  .name__input {
+    width: auto;
+    flex-grow: 1;
+    height: 60px;
+    margin: 0;
+  }
 }

@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.travel__title{
+.travel__title {
   width: 222px;
   font-size: 14px;
   line-height: 18px;
@@ -53,12 +53,10 @@
 
 .travel__input {
   position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
-.travel__item-img{
+.travel__item-img {
   position: absolute;
   margin-left: -23px;
   width: 35px;
@@ -67,6 +65,7 @@
   border-radius: 3px;
   background-color: $white;
 }
+
 .travel__input:focus + .travel__item-img,
 .travel__item-checkbox:hover .travel__item-img {
   border-color: $dark-two;
@@ -84,7 +83,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .travel{
+  .travel {
     width: 620px;
     margin: 0 auto;
     display: flex;
@@ -97,6 +96,7 @@
   .travel__item-title {
     margin-left: 33px;
   }
+
   .travel__title {
     width: 436px;
     display: block;
@@ -111,13 +111,13 @@
   }
 
   .travel__list {
-   margin-top: 22px;
-   margin-left: 77px;
+    margin-top: 22px;
+    margin-left: 77px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .travel{
+  .travel {
     width: 940px;
     height: 239px;
     margin: 0 auto;
@@ -131,7 +131,5 @@
     flex-wrap: wrap;
     height: 228px;
     margin-top: 19px;
-   }
-
+  }
 }
-

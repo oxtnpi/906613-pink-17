@@ -51,6 +51,7 @@
   background-color: $lipstick;
   color: $white;
 }
+
 .filter__button--add:active {
   color: $grey-button-text;
 }
@@ -71,6 +72,7 @@
   .filter {
     width: 660px;
   }
+
   .filter__title {
     width: 418px;
     margin: 0 auto;
@@ -83,10 +85,12 @@
     width: 260px;
     height: 55px;
   }
+
   .filter__button--add {
     margin-bottom: 26px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .filter {
     width: 960px;

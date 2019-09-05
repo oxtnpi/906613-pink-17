@@ -2,8 +2,9 @@
   width: 320px;
   margin: auto;
   position: relative;
-  z-index: 5;
+  z-index: 10;
   color: $white-15;
+  background-color: $blue-origin;
 }
 
 .main-menu--opened {
@@ -18,7 +19,7 @@
   display: none;
 }
 
-.main-menu--opened .main-menu__toggle {
+.main-menu--closed .main-menu__toggle {
   width: 24px;
   height: 24px;
   border: none;
@@ -32,7 +33,7 @@
     right: 17px;
 
     width: 36px;
-    height: 2px;
+    height: 3px;
 
 
     background-color: $white;
@@ -52,7 +53,7 @@
 }
 
 
-.main-menu--closed .main-menu__toggle {
+.main-menu--opened .main-menu__toggle {
   width: 30px;
   height: 24px;
   border: none;
@@ -63,11 +64,10 @@
     content: "";
 
     position: absolute;
-    top: 25px;
-    right: 19px;
-
-    width: 24px;
-    height: 3px;
+    top: 30px;
+    right: 17px;
+    width: 29px;
+    height: 5px;
 
     background-color: $white;
   }
@@ -149,7 +149,7 @@
   .main-menu {
     width: $tablet-width;
     margin: 0 auto;
-    z-index: 5;
+    z-index: 10;
   }
 
   .main-menu__top-bar {
@@ -169,21 +169,20 @@
     height: 24px;
     border: none;
     background: none;
-  }
 
+    &::before {
+      content: "";
 
-  .main-menu--closed .main-menu__toggle::before {
-    content: "";
+      position: absolute;
+      top: 45px;
+      right: 17px;
 
-    position: absolute;
-    top: 45px;
-    right: 17px;
+      width: 50px;
+      height: 3px;
 
-    width: 50px;
-    height: 3px;
-
-    background-color: $white;
-    box-shadow: 0 9px 0 0 $white, 0 18px 0 0 $white;
+      background-color: $white;
+      box-shadow: 0 9px 0 0 $white, 0 18px 0 0 $white;
+    }
   }
 
   .main-menu--opened .main-menu__toggle {
@@ -192,11 +191,10 @@
       content: "";
 
       position: absolute;
-      top: 50px;
-      right: 19px;
-
-      width: 24px;
-      height: 3px;
+      top: 53px;
+      right: 16px;
+      width: 30px;
+      height: 5px;
     }
 
     &::before {
@@ -261,7 +259,6 @@
     text-transform: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 8px;
     box-shadow: none;
   }
 

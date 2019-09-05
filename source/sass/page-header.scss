@@ -1,18 +1,30 @@
 .page-header {
-  color: #ffffff;
+  color: $white;
   display: block;
 }
 
 .page-header__container {
   width: 320px;
   margin: 0 auto;
-  height: 396px;
+  height: 463px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -66px;
   padding-top: 66px;
   z-index: 5;
+  background-color: $blue-origin;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+    background-color: $blue-origin;
+  }
+}
+
+.page-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-header__container--photo-page {
@@ -29,14 +41,14 @@
   font-weight: 300;
   line-height: 28px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   padding: 0;
   margin-top: 32px;
 }
 
 .page-header__container--form-page {
   width: 320px;
-  height: 230px;
+  height: 238px;
   display: flex;
   margin: 0 auto;
   margin-top: -66px;
@@ -44,14 +56,15 @@
 }
 
 .page-header__title--form-page {
-  width: 226px;
+  width: 228px;
   height: 82px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
-  line-height: 24px;
+  line-height: 29px;
   margin: 0 auto;
   padding: 0;
+  margin-bottom: 29px;
 }
 
 .page-header__img {
@@ -60,6 +73,11 @@
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: bottom left;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
 }
 
 .page-header__title {
@@ -91,19 +109,26 @@
     background-position-y: bottom;
     background-repeat: no-repeat;
     margin-top: -111px;
+    background-color: $blue-origin;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+      background-color: $blue-origin;
+    }
   }
 
   .page-header__wrapper--form-page {
     width: 660px;
-    height: 393px;
+    height: 439px;
     background-position-x: center;
-    background-position-y: top;
-    background-size: 660px;
+    background-position-y: 44px;
+    background-size: cover;
   }
 
   .page-header__wrapper--photo-page {
     width: 660px;
-    height: 396px;
+    height: 440px;
     background-position-x: center;
     background-position-y: top;
     display: flex;
@@ -129,10 +154,10 @@
     font-weight: 300;
     line-height: 60px;
     text-align: center;
-    color: #ffffff;
+    color: $white;
     padding: 0;
     margin: 0;
-    margin-top: 55px;
+    margin-top: 34px;
   }
 
 
@@ -142,7 +167,7 @@
     font-size: 50px;
     font-weight: 300;
     line-height: 59px;
-    margin-top: 45px;
+    margin-top: 75px;
   }
 
   .page-header__content {
@@ -168,6 +193,11 @@
     height: 684px;
     top: 66px;
     left: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
   }
 }
 
@@ -181,7 +211,14 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background-color: $blue-origin;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+      background-color: $blue-origin;
+    }
   }
 
   .page-header__wrapper {
@@ -237,7 +274,6 @@
     margin-left: 35px;
     margin-top: 53px;
     margin-bottom: 20px;
-
     font-size: 50px;
     line-height: 57px;
     font-weight: 300;
@@ -252,6 +288,11 @@
     height: 684px;
     top: 0;
     left: 16px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
   }
 
   .page-header__wrapper--photo-page {

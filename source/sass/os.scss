@@ -1,0 +1,133 @@
+.os {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: $white-origin;
+  position: relative;
+}
+
+.os__title {
+  width: 219px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $lipstick;
+  background-color: $white-origin;
+  text-transform: uppercase;
+  position: absolute;
+  top: 42px;
+  left: 51px;
+}
+
+.os__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 116px;
+  margin-left: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.os__item {
+  margin-bottom: 45px;
+}
+
+.os__label {
+  padding-left: 7px;
+}
+
+.os__item-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-two;
+  margin-left: 41px;
+}
+
+.os__input {
+  position: absolute;
+  appearance: none;
+}
+
+.os__item-img {
+  position: absolute;
+  margin-left: -23px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $grey-light;
+  border-radius: 50%;
+  background-color: $white;
+}
+
+.os__input:focus + .os__item-img,
+.os__label:hover .os__item-img {
+  border-color: $dark-two;
+}
+
+.os__label:active .os__item-img {
+  border-color: $lipstick;
+}
+
+.os__label:active .os__item-img,
+.os__input:checked + .os__item-img {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='36'%3E%3Ccircle cx='18' cy='18' r='18' fill='%23FFF'/%3E%3Ccircle cx='18' cy='18' r='7.9' fill='%23D22856'/%3E%3C/svg%3E");
+  background-size: 35px 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .os {
+    width: 620px;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid $grey-light;
+    order: -9;
+    background-color: $white;
+    margin-bottom: 51px;
+  }
+
+  .os__title {
+    width: 365px;
+    display: block;
+    position: static;
+    margin: 0 auto;
+    background-color: $white;
+  }
+
+  .os__list {
+    margin-top: 46px;
+    margin-left: 71px;
+    margin-bottom: 16px;
+  }
+
+  .os__label {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .os {
+    width: 435px;
+    order: -9;
+    margin: 0;
+    margin-bottom: 51px;
+  }
+
+  .os__item-title {
+    margin-left: 35px;
+  }
+
+  .os__title {
+    margin-bottom: 4px;
+  }
+
+  .os__list {
+    margin-top: 43px;
+    margin-left: 63px;
+    margin-bottom: 17px;
+  }
+}

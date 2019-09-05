@@ -19,8 +19,8 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 27px 10px;
+  margin: 0 auto;
+  padding: 27px 0;
   list-style: none;
 }
 
@@ -41,6 +41,7 @@
 }
 
 .advantages__item-text {
+  width: 271px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -56,6 +57,11 @@
   width: 157px;
   height: 320px;
   margin-left: 83px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
+  }
 }
 
 .advantages__wrapper {
@@ -119,6 +125,11 @@
     margin-left: 20px;
     padding: 0;
     order: 1;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 268px auto;
+    }
   }
 
   .advantages__wrapper {
@@ -185,7 +196,6 @@
     font-weight: 300;
     text-align: center;
     color: #283645;
-    letter-spacing: 0.4px;
   }
 
   .advantages__container {

@@ -1,0 +1,135 @@
+.travel {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: $white-origin;
+  position: relative;
+}
+
+.travel__title {
+  width: 222px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $lipstick;
+  background-color: $white-origin;
+  text-transform: uppercase;
+  position: absolute;
+  top: 37px;
+  left: 51px;
+}
+
+.travel__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 115px;
+  margin-left: 38px;
+  list-style: none;
+  padding: 0;
+}
+
+.travel__item {
+  margin-bottom: 52px;
+}
+
+.travel__item--hotel {
+  margin-bottom: 48px;
+}
+
+.travel__item-checkbox {
+  padding-left: 7px;
+}
+
+.travel__item-title {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-two;
+  margin-left: 43px;
+}
+
+.travel__input {
+  position: absolute;
+  appearance: none;
+}
+
+.travel__item-img {
+  position: absolute;
+  margin-left: -23px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $grey-light;
+  border-radius: 3px;
+  background-color: $white;
+}
+
+.travel__input:focus + .travel__item-img,
+.travel__item-checkbox:hover .travel__item-img {
+  border-color: $dark-two;
+}
+
+.travel__item-checkbox:active .travel__item-img {
+  border-color: $lipstick;
+}
+
+.travel__input:checked + .travel__item-img {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1' viewBox='-82.4 4.9 21.7 16.1'%3E%3Cpath fill='%23d22856' d='M-61 5.2a1 1 0 0 0-1.4 0l-13.4 13.4-4.9-5a1 1 0 1 0-1.4 1.5l5.6 5.6a1 1 0 0 0 1.5 0l14-14c.4-.5.4-1.1 0-1.5z'/%3E%3C/svg%3E");
+  background-position: center;
+  background-size: 22px 16px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .travel {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid $grey-light;
+    order: -7;
+    background-color: $white;
+    margin-bottom: 50px;
+  }
+
+  .travel__item-title {
+    margin-left: 33px;
+  }
+
+  .travel__title {
+    width: 436px;
+    display: block;
+    position: static;
+    background-color: $white;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  .travel__item--hotel {
+    margin-bottom: 53px;
+  }
+
+  .travel__list {
+    margin-top: 22px;
+    margin-left: 77px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel {
+    width: 940px;
+    height: 239px;
+    margin: 0 auto;
+    order: -7;
+    margin-bottom: 50px;
+  }
+
+  .travel__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 228px;
+    margin-top: 19px;
+  }
+}

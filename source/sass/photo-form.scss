@@ -32,6 +32,8 @@
   padding: 0;
   padding-right: 17px;
   margin-bottom: 18px;
+  margin-top: 4px;
+  padding-left: 8px;
 }
 
 .photo-form__button {
@@ -90,74 +92,36 @@
 }
 
 
-.photo-form__input-range {
-  appearance: none;
-  margin: 18px 0;
+.photo-form__item-range-progress {
+  position: relative;
+  display: block;
+  margin: 15px 0;
   width: 240px;
   height: 2px;
-  background-color: $grey-light;
-}
-
-.photo-form__input-range::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
   background: $dark-two;
 }
 
-.photo-form__input-range::-webkit-slider-thumb {
-  appearance: none;
-  width: 12px;
-  height: 12px;
-  border: 2px solid $lipstick;
-  border-radius: 50%;
-  background: $grey-light;
-  margin-top: -5px;
-}
-
-.photo-form__input-range:active::-webkit-slider-thumb {
-  background: $lipstick;
-}
-
-.photo-form__input-range::-moz-range-track {
+.photo-form__item-range-progress:active {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background: $dark-two;
 }
 
-.photo-form__input-range::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
+.photo-form__item-range-needle {
+  position: absolute;
+  top: 9px;
+  right: 35px;
+  width: 14px;
+  height: 14px;
   border: 2px solid $lipstick;
   border-radius: 50%;
   background: $grey-light;
-  margin-top: -5px;
 }
 
-.photo-form__input-range:active::-moz-range-thumb {
+.photo-form__item-range-needle:active{
   background: $lipstick;
 }
 
-.photo-form__input-range::-ms-track {
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
-  background: $dark-two;
-}
-
-.photo-form__input-range::-ms-thumb {
-  width: 12px;
-  height: 12px;
-  border: 2px solid $lipstick;
-  border-radius: 50%;
-  background: $grey-light;
-  margin-top: -1px;
-}
-
-.photo-form__input-range:active::-ms-thumb {
-  background: $lipstick;
-}
 
 .photo-form__item-range--fill {
   display: none;
@@ -184,7 +148,7 @@
   .photo-form__list-button {
     flex-direction: column;
     margin-top: 64px;
-    margin-left: 32px;
+    margin-left: 24px;
     margin-bottom: 39px;
   }
 
@@ -214,22 +178,35 @@
   }
 
   .photo-form__list-range {
-    margin-top: 57px;
+    margin: 0;
+    margin-top: 60px;
     margin-right: 32px;
-    margin-bottom: 0;
   }
 
   .photo-form__item-range {
-    margin-bottom: 34px;
+    margin-bottom: 40px;
 
     &::after {
       width: 275px;
       left: -55px;
+      bottom: -20px;
     }
   }
 
-  .photo-form__input-range {
+  .photo-form__item-range-progress {
     width: 202px;
+  }
+
+  .photo-form__item-range-needle--crop {
+    right: 43px;
+  }
+
+  .photo-form__item-range-needle--fill {
+    left: 24px;
+  }
+
+  .photo-form__item-range-needle--contrast {
+    right: 93px;
   }
 
   .photo-form__item-range--fill {
@@ -261,9 +238,10 @@
   }
 
   .photo-form__list-button {
+    padding: 0;
     width: 50px;
     margin-top: 51px;
-    margin-bottom: 121px;
+    margin-bottom: 126px;
     margin-left: 24px;
     margin-right: 4px;
   }
@@ -271,7 +249,7 @@
   .photo-form__button {
     width: 44px;
     height: 44px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .photo-form__button-svg--crop {
@@ -295,13 +273,26 @@
   }
 
   .photo-form__item-range {
+    margin-bottom: 39px;
     &::after {
       width: 410px;
       left: -96px;
     }
   }
 
-  .photo-form__input-range {
+  .photo-form__item-range-progress{
     width: 288px;
+  }
+
+  .photo-form__item-range-needle--crop {
+    left: 70px;
+  }
+
+  .photo-form__item-range-needle--fill {
+    left: 245px;
+  }
+
+  .photo-form__item-range-needle--contrast {
+    right: 115px;
   }
 }

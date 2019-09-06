@@ -29,7 +29,7 @@
 
 .page-header__container--photo-page {
   width: 320px;
-  height: 237px;
+  height: 239px;
   display: flex;
   justify-content: center;
 }
@@ -137,7 +137,6 @@
   }
 
   .page-header__container {
-    position: absolute;
     background: transparent;
     margin-top: -23px;
   }
@@ -241,6 +240,7 @@
 
 
   .page-header__container {
+    position: relative;
     margin: 0;
     padding: 0;
   }

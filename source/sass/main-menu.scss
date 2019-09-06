@@ -237,7 +237,11 @@
     padding: 0;
   }
 
-  .main-menu__toggle {
+  .main-menu--opened .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu--closed .main-menu__toggle {
     display: none;
   }
 

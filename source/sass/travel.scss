@@ -54,6 +54,10 @@
 .travel__input {
   position: absolute;
   appearance: none;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .travel__item-img {
@@ -94,6 +98,7 @@
   }
 
   .travel__item-title {
+    margin-top: -10px;
     margin-left: 33px;
   }
 

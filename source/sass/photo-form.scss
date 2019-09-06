@@ -118,7 +118,7 @@
   background: $grey-light;
 }
 
-.photo-form__item-range-needle:active{
+.photo-form__item-range-needle:active {
   background: $lipstick;
 }
 
@@ -274,13 +274,14 @@
 
   .photo-form__item-range {
     margin-bottom: 39px;
+
     &::after {
       width: 410px;
       left: -96px;
     }
   }
 
-  .photo-form__item-range-progress{
+  .photo-form__item-range-progress {
     width: 288px;
   }
 

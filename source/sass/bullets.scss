@@ -10,8 +10,10 @@
 .bullets__button {
   width: 6px;
   height: 6px;
+  border: 0;
   border-radius: 50%;
   background-color: $grey-bullets;
+  box-sizing: content-box;
   padding: 0;
   margin: 0 4px;
 }
@@ -33,16 +35,16 @@
 
 .bullets__button--active {
   border: solid 3px $dark-two;
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   background-color: $white;
 }
 
 .bullets__button--active:hover,
 .bullets__button--active:active {
   border: solid 3px $dark-two;
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   background-color: $white;
   opacity: 1;
 }

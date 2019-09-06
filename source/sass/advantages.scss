@@ -11,6 +11,7 @@
   height: 100%;
   background-image: url("../img/bg-triangle-white.svg");
   background-position-y: -64px;
+  background-size: contain;
   z-index: -1;
   background-repeat: no-repeat;
   background-color: $white-origin;

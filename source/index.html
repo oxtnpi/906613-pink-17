@@ -13,7 +13,7 @@
 
   <header class="page-header">
 
-    <nav class="page-header__menu main-menu main-menu--opened main-menu--nojs">
+    <nav class="page-header__menu main-menu main-menu--closed main-menu--nojs">
       <div class="main-menu__wrapper">
         <div class="main-menu__top-bar">
           <a class="main-menu__logo logo logo--phone">
@@ -53,13 +53,28 @@
           <a class="downloads__button downloads-button" href="https://apps.apple.com/">Скачать приложение</a>
 
           <ul class="downloads__list">
-            <li class="downloads__item"><a href="https://apps.apple.com/" class="downloads__link"><img
-                  class="downloads__img" src="img/logo-apple.svg" width="47" height="56" alt="Apple"></a></li>
-            <li class="downloads__item"><a href="https://play.google.com/store" class="downloads__link"><img
-                  class="downloads__img" src="img/logo-android.svg" width="43" height="47" alt="Android"></a></li>
-            <li class="downloads__item"><a href="https://www.microsoft.com/ru-ru/store/apps"
-                class="downloads__link"><img class="downloads__img" src="img/logo-microsoft.svg" width="44" height="41"
-                  alt="Windows"></a></li>
+            <li class="downloads__item">
+              <a href="https://apps.apple.com/" class="downloads__link">
+                <svg class="downloads__img" width="47" height="56">
+                  <use xlink:href="img/library.svg#apple"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="downloads__item">
+              <a href="https://play.google.com/store" class="downloads__link">
+                <svg class="downloads__img" width="43" height="47">
+                  <use xlink:href="img/library.svg#android"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="downloads__item">
+              <a href="https://www.microsoft.com/ru-ru/store/apps" class="downloads__link">
+                <svg class="downloads__img" width="44" height="41">
+                  <use xlink:href="img/library.svg#windows"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
 
           <p class="downloads__description">
@@ -98,19 +113,22 @@
       <div class="advantages__container">
         <div class="advantages__wrapper">
           <picture>
-            <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp, img/iphone-screen-1-desktop@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/iphone-screen-1-desktop@1x.webp, img/iphone-screen-1-desktop@2x.webp 2x">
 
             <img class="advantages__img" src="img/iphone-screen-1-desktop@1x.png" width="295" height="300"
               alt="Телефон с серым фоном" srcset="img/iphone-screen-1-desktop@2x.png 2x">
           </picture>
           <picture>
-              <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp, img/iphone-screen-2-desktop@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/iphone-screen-2-desktop@1x.webp, img/iphone-screen-2-desktop@2x.webp 2x">
 
             <img class="advantages__img" src="img/iphone-screen-2-desktop@1x.png" width="295" height="300"
               alt="Телефон с розовым фоном" srcset="img/iphone-screen-2-desktop@2x.png 2x">
           </picture>
           <picture>
-              <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp, img/iphone-screen-3-desktop@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/iphone-screen-3-desktop@1x.webp, img/iphone-screen-3-desktop@2x.webp 2x">
 
             <img class="advantages__img" src="img/iphone-screen-3-desktop@1x.png" width="295" height="300"
               alt="Телефон со смайликом фоном" srcset="img/iphone-screen-3-desktop@2x.png 2x">
@@ -118,7 +136,9 @@
         </div>
       </div>
       <div class="advantages__research research">
-        <img src="img/timer.svg" class="research__img" width="238" height="276" alt="Таймер">
+        <svg class="research__img" width="238" height="276">
+          <use xlink:href="img/library.svg#timer"></use>
+        </svg>
         <div class="research__description">
           <h3 class="research__title">Эффект<br> на 24 часа!</h3>
           <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от
@@ -173,9 +193,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Розовый фильтр</span>
                 <div class="table-price__check table-price__check--true">
-                    <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                        <use xlink:href="img/library.svg#yes"></use>
-                      </svg>
+                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
+                    <use xlink:href="img/library.svg#yes"></use>
+                  </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
               </div>
@@ -184,9 +204,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Розовый фильтр</span>
                 <div class="table-price__check table-price__check--true">
-                    <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                        <use xlink:href="img/library.svg#yes"></use>
-                      </svg>
+                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
+                    <use xlink:href="img/library.svg#yes"></use>
+                  </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
               </div>
@@ -195,9 +215,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Розовый фильтр</span>
                 <div class="table-price__check table-price__check--true">
-                    <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                        <use xlink:href="img/library.svg#yes"></use>
-                      </svg>
+                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
+                    <use xlink:href="img/library.svg#yes"></use>
+                  </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
               </div>
@@ -209,9 +229,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Смайлики</span>
                 <div class="table-price__check table-price__check--false">
-                    <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
-                        <use xlink:href="img/library.svg#no"></use>
-                      </svg>
+                  <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
+                    <use xlink:href="img/library.svg#no"></use>
+                  </svg>
                   <span class="visually-hidden">Нет</span>
                 </div>
               </div>
@@ -220,9 +240,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Смайлики</span>
                 <div class="table-price__check table-price__check--true">
-                    <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                        <use xlink:href="img/library.svg#yes"></use>
-                      </svg>
+                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
+                    <use xlink:href="img/library.svg#yes"></use>
+                  </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
               </div>
@@ -231,9 +251,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Смайлики</span>
                 <div class="table-price__check table-price__check--true">
-                    <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                        <use xlink:href="img/library.svg#yes"></use>
-                      </svg>
+                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
+                    <use xlink:href="img/library.svg#yes"></use>
+                  </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
               </div>
@@ -245,9 +265,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Комментарии</span>
                 <div class="table-price__check table-price__check--false">
-                    <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
-                        <use xlink:href="img/library.svg#no"></use>
-                      </svg>
+                  <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
+                    <use xlink:href="img/library.svg#no"></use>
+                  </svg>
                   <span class="visually-hidden">Нет</span>
                 </div>
               </div>
@@ -256,9 +276,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Комментарии</span>
                 <div class="table-price__check table-price__check--false">
-                    <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
-                        <use xlink:href="img/library.svg#no"></use>
-                      </svg>
+                  <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
+                    <use xlink:href="img/library.svg#no"></use>
+                  </svg>
                   <span class="visually-hidden">Нет</span>
                 </div>
               </div>
@@ -267,9 +287,9 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Комментарии</span>
                 <div class="table-price__check table-price__check--true">
-                    <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                        <use xlink:href="img/library.svg#yes"></use>
-                      </svg>
+                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
+                    <use xlink:href="img/library.svg#yes"></use>
+                  </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
               </div>
@@ -314,13 +334,13 @@
   </main>
   <footer class="page-footer footer-index">
     <a class="page-footer__logo logo-footer">
-        <svg class="page-footer__logo-image logo-footer__image" width="147" height="40">
-            <use xlink:href="img/library.svg#logo-footer-mobile"></use>
-          </svg>
+      <svg class="page-footer__logo-image logo-footer__image" width="147" height="40">
+        <use xlink:href="img/library.svg#logo-footer-mobile"></use>
+      </svg>
 
-        <svg class="logo-footer__image logo-footer__image--desktop" width="147" height="40">
-            <use xlink:href="img/library.svg#logo-footer-desktop"></use>
-          </svg>
+      <svg class="logo-footer__image logo-footer__image--desktop" width="147" height="40">
+        <use xlink:href="img/library.svg#logo-footer-desktop"></use>
+      </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">

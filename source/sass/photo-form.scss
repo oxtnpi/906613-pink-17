@@ -70,7 +70,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   margin-bottom: 56px;
   position: relative;
@@ -87,7 +87,7 @@
     background-color: $dark-two;
     opacity: 0.1;
     bottom: -15px;
-    left: -40px;
+    left:0;
   }
 }
 
@@ -95,7 +95,7 @@
 .photo-form__item-range-progress {
   position: relative;
   display: block;
-  margin: 15px 0;
+  margin: 15px auto;
   width: 240px;
   height: 2px;
   background: $dark-two;
@@ -110,7 +110,7 @@
 .photo-form__item-range-needle {
   position: absolute;
   top: 9px;
-  right: 35px;
+  right: 75px;
   width: 14px;
   height: 14px;
   border: 2px solid $lipstick;

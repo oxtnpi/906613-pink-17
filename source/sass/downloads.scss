@@ -58,6 +58,7 @@
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+  max-width: 280px;
 }
 
 @media (min-width: $tablet-width) {
@@ -89,7 +90,7 @@
     font-size: 18px;
     margin: 0;
     margin-top: 25px;
-    margin-bottom: 96px;
+    margin-bottom: 70px;
   }
 }
 
@@ -115,7 +116,7 @@
 
   .downloads__description {
     margin-left: 5px;
-    margin-bottom: 112px;
+    margin-bottom: 87px;
   }
 
 

@@ -10,7 +10,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -66px;
+  margin-top: -69px;
   padding-top: 66px;
   z-index: 5;
   background-color: $blue-origin;
@@ -22,6 +22,7 @@
   }
 }
 
+
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -29,7 +30,7 @@
 
 .page-header__container--photo-page {
   width: 320px;
-  height: 237px;
+  height: 239px;
   display: flex;
   justify-content: center;
 }
@@ -51,7 +52,7 @@
   height: 238px;
   display: flex;
   margin: 0 auto;
-  margin-top: -66px;
+  margin-top: -69px;
   align-items: center;
 }
 
@@ -137,9 +138,12 @@
   }
 
   .page-header__container {
-    position: absolute;
     background: transparent;
     margin-top: -23px;
+  }
+
+  .page-header__container--index {
+    position: absolute;
   }
 
   .page-header__container--form-page {
@@ -241,8 +245,13 @@
 
 
   .page-header__container {
+    position: relative;
     margin: 0;
     padding: 0;
+  }
+
+  .page-header__container--index {
+    position: absolute;
   }
 
   .page-header__container--form-page {

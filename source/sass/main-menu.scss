@@ -20,10 +20,11 @@
 }
 
 .main-menu--closed .main-menu__toggle {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border: none;
   background: none;
+  display: block;
 
   &::before {
     content: "";
@@ -236,7 +237,11 @@
     padding: 0;
   }
 
-  .main-menu__toggle {
+  .main-menu--opened .main-menu__toggle {
+    display: none;
+  }
+
+  .main-menu--closed .main-menu__toggle {
     display: none;
   }
 

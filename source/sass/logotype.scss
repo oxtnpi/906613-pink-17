@@ -23,19 +23,17 @@
   opacity: 0.3;
 }
 
-.logo-image__footer--glasses {
+.logo-footer__image {
   fill: $dark-two;
+  display: block;
 }
 
-.logo__footer:hover .logo-image__footer--glasses {
+.logo-footer:hover .logo-footer__image {
   fill: $lipstick;
 }
 
-.logo__footer:active .logo-image__footer--glasses {
+.logo-footer:active .logo-footer__image {
   fill: $dark-two;
-}
-
-.logo__footer:active .logo-image__footer {
   opacity: 0.3;
 }
 
@@ -47,17 +45,13 @@
   display: none;
 }
 
-.logo__footer {
+.logo-footer {
   width: 147px;
   height: 40px;
   margin-top: 40px;
 }
 
-.logo-image__footer {
-  display: block;
-}
-
-.logo-image__footer--desktop {
+.logo-footer__image--desktop {
   display: none;
 }
 
@@ -83,11 +77,11 @@
     display: none;
   }
 
-  .logo-image__footer--desktop {
+  .logo-footer__image--desktop {
     display: none;
   }
 
-  .logo__footer {
+  .logo-footer {
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
@@ -109,15 +103,15 @@
     height: 40px;
   }
 
-  .logo-image__footer {
+  .logo-footer__image {
     display: none;
   }
 
-  .logo-image__footer--desktop {
+  .logo-footer__image--desktop {
     display: block;
   }
 
-  .logo__footer {
+  .logo-footer {
     padding-left: 5px;
   }
 }

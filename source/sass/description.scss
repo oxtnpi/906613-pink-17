@@ -1,4 +1,4 @@
-.discription {
+.description {
   width: 280px;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.discription__title {
+.description__title {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -19,7 +19,8 @@
   left: 48px;
 }
 
-.discription__text {
+.description__text {
+  display: block;
   width: 280px;
   height: 200px;
   border: solid 2px $grey-light;
@@ -33,16 +34,16 @@
   margin-bottom: 50px;
 }
 
-.discription__text:hover {
+.description__text:hover {
   border: solid 2px $dark-two;
 }
 
-.discription__text:active {
+.description__text:active {
   border: solid 2px $lipstick;
 }
 
 @media (min-width: $tablet-width) {
-  .discription {
+  .description {
     width: 620px;
     display: flex;
     margin: 0 auto;
@@ -50,15 +51,16 @@
     margin-bottom: 66px;
   }
 
-  .discription__title {
+  .description__title {
     width: 260px;
     display: block;
     position: static;
     margin: 0 auto;
+    margin-top: -10px;
     margin-bottom: 32px;
   }
 
-  .discription__text {
+  .description__text {
     width: 496px;
     height: 192px;
     margin: 0 auto;
@@ -67,11 +69,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .discription {
+  .description {
     width: 960px;
   }
 
-  .discription__text {
+  .description__text {
     width: 816px;
     height: 124px;
     margin-bottom: 47px;

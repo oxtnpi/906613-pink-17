@@ -7,16 +7,22 @@
   background-color: $blue-origin;
 }
 
-.main-menu--opened {
-  background-color: $blue-origin;
-}
-
 .main-menu--closed {
   background-color: $black-30;
 }
 
 .main-menu--closed .main-menu__list {
   display: none;
+}
+
+.main-menu--opened,
+.main-menu--nojs {
+  background-color: $blue-origin;
+}
+
+
+.main-menu--nojs .main-menu__list {
+  display: block;
 }
 
 .main-menu--closed .main-menu__toggle {
@@ -247,6 +253,10 @@
 
   .main-menu--closed .main-menu__list {
     display: flex;
+  }
+
+  .main-menu--nojs {
+    background-color: $black-30;
   }
 
   .main-menu__list {

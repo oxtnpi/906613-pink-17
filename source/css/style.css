@@ -748,14 +748,18 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.15);
   background-color: #233343; }
 
-.main-menu--opened {
-  background-color: #233343; }
-
 .main-menu--closed {
   background-color: rgba(0, 0, 0, 0.3); }
 
 .main-menu--closed .main-menu__list {
   display: none; }
+
+.main-menu--opened,
+.main-menu--nojs {
+  background-color: #233343; }
+
+.main-menu--nojs .main-menu__list {
+  display: block; }
 
 .main-menu--closed .main-menu__toggle {
   width: 30px;
@@ -936,6 +940,8 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .main-menu--nojs {
+    background-color: rgba(0, 0, 0, 0.3); }
   .main-menu__list {
     display: -webkit-box;
     display: -ms-flexbox;

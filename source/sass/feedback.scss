@@ -151,6 +151,15 @@
     height: 41px;
     opacity: 0.3;
   }
+  .feedback__buttons--before:hover,
+  .feedback__buttons--after:hover {
+    opacity: 0.6;
+  }
+
+  .feedback__buttons--before:active,
+  .feedback__buttons--after:active {
+    opacity: 0.1;
+  }
 
   .feedback__bullets {
     display: none;

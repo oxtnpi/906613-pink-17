@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 
   <title>HTML Academy: Пинк</title>
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="build/img/library.svg"></include>
+  </div>
 
   <header class="page-header">
 
@@ -19,15 +21,15 @@
         <div class="main-menu__top-bar">
           <a href="index.html" class="main-menu__logo logo logo--phone  ">
             <svg class="logo-image logo-image--phone" width="75" height="22">
-              <use xlink:href="img/library.svg#logo-mobile"></use>
+              description<use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
 
             <svg class="logo-image logo-image--tablet" width="147" height="40">
-              <use xlink:href="img/library.svg#logo-tablet"></use>
+              description<use xlink:href="#logo-pink-white-tablet"></use>
             </svg>
 
             <svg class="logo-image logo-image--desktop" width="147" height="40">
-              <use xlink:href="img/library.svg#logo-desktop"></use>
+              description<use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -295,34 +297,37 @@
           <ul class="photo-form__list-button">
             <li class="photo-form__item-button"><button
                 class="photo-form__button photo-form__button--crop photo-form__button--active">
-                <svg width="44" height="44" class="photo-form__button-svg photo-form__button-svg--crop">
-                  <use xlink:href="img/library.svg#crop"></use>
+                <svg width="44" height="44" viewBox="0 0 44 44"
+                  class="photo-form__button-svg photo-form__button-svg--crop">
+                  description<use xlink:href="#icon-editor-crop"></use>
                 </svg>
                 <span class="visually-hidden">Обрезать</span></button></li>
             <li class="photo-form__item-button"><button class="photo-form__button photo-form__button--fill">
-                <svg width="48" height="43" class="photo-form__button-svg photo-form__button-svg--fill">
-                  <use xlink:href="img/library.svg#fill"></use>
+                <svg width="48" height="43" viewBox="0 0 48 43"
+                  class="photo-form__button-svg photo-form__button-svg--fill">
+                  description<use xlink:href="#icon-editor-fill"></use>
                 </svg>
                 <span class="visually-hidden">Заливка</span></button></li>
             <li class="photo-form__item-button"><button class="photo-form__button photo-form__button--contrast">
-                <svg width="32" height="32" class="photo-form__button-svg photo-form__button-svg--contrast">
-                  <use xlink:href="img/library.svg#contrast"></use>
+                <svg width="32" height="32" viewBox="0 0 32 32"
+                  class="photo-form__button-svg photo-form__button-svg--contrast">
+                  description<use xlink:href="#icon-editor-contrast"></use>
                 </svg>
                 <span class="visually-hidden">Контраст</span></button></li>
           </ul>
 
           <ul class="photo-form__list-range">
             <li class="photo-form__item-range photo-form__item-range--crop">
-                <div class="photo-form__item-range-progress"></div>
-                <div class="photo-form__item-range-needle photo-form__item-range-needle--crop"></div>
+              <div class="photo-form__item-range-progress"></div>
+              <div class="photo-form__item-range-needle photo-form__item-range-needle--crop"></div>
             </li>
             <li class="photo-form__item-range photo-form__item-range--fill">
-                <div class="photo-form__item-range-progress"></div>
-                <div class="photo-form__item-range-needle photo-form__item-range-needle--fill"></div>
+              <div class="photo-form__item-range-progress"></div>
+              <div class="photo-form__item-range-needle photo-form__item-range-needle--fill"></div>
             </li>
             <li class="photo-form__item-range photo-form__item-range--contrast">
-                <div class="photo-form__item-range-progress"></div>
-                <div class="photo-form__item-range-needle photo-form__item-range-needle--contrast"></div>
+              <div class="photo-form__item-range-progress"></div>
+              <div class="photo-form__item-range-needle photo-form__item-range-needle--contrast"></div>
             </li>
           </ul>
         </div>
@@ -338,32 +343,32 @@
   <footer class="page-footer">
     <a class="page-footer__logo logo-footer">
       <svg class="page-footer__logo-image logo-footer__image" width="147" height="40">
-        <use xlink:href="img/library.svg#logo-footer-mobile"></use>
+        description<use xlink:href="#logo-pink-blue-mobile"></use>
       </svg>
 
       <svg class="logo-footer__image logo-footer__image--desktop" width="147" height="40">
-        <use xlink:href="img/library.svg#logo-footer-desktop"></use>
+        description<use xlink:href="#logo-pink-blue-desktop"></use>
       </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link" href="https://twitter.com">
           <svg class="social__icon social__icon--twitter" width="17.5" height="14.663">
-            <use xlink:href="img/library.svg#twitter"></use>
+            description<use xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://ru-ru.facebook.com/">
           <svg class="social__icon social__icon--facebook" width="8.673" height="18.944">
-            <use xlink:href="img/library.svg#facebook"></use>
+            description<use xlink:href="#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://www.youtube.com/">
           <svg class="social__icon social__icon--youtube" width="14.64" height="13.96">
-            <use xlink:href="img/library.svg#youtube"></use>
+            description<use xlink:href="#icon-youtube"></use>
           </svg>
         </a>
       </li>
@@ -372,7 +377,7 @@
     <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
       <svg class="copyright__img" width="26.943" height="34.09">
-        <use xlink:href="img/library.svg#htmlacademy"></use>
+        description<use xlink:href="#logo-htmlacademy"></use>
       </svg>
     </a>
   </footer>

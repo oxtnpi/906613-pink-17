@@ -48,6 +48,11 @@
   color: $grey-button-text;
 }
 
+.form__button:disabled {
+  border: solid 2px $grey-light;
+  background-color: $grey-light;
+}
+
 .form__message {
   width: 183px;
   display: block;

@@ -26,21 +26,21 @@
 }
 
 .main-menu--closed .main-menu__toggle {
-  width: 30px;
+  width: 50px;
   height: 30px;
   border: none;
   background: none;
   display: block;
 
+
   &::before {
     content: "";
 
     position: absolute;
-    top: 25px;
-    right: 17px;
-
-    width: 36px;
-    height: 3px;
+    top: 21px;
+    right: 22px;
+    width: 49px;
+    height: 4px;
 
 
     background-color: $white;
@@ -160,8 +160,10 @@
   }
 
   .main-menu__top-bar {
-    height: 110px;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 105px;
+    padding: 0;
   }
 
   .main-menu__toggle {
@@ -169,6 +171,8 @@
     height: 24px;
     border: none;
     background: none;
+    margin-top: 40px;
+    margin-right: 20px;
   }
 
   .main-menu--closed .main-menu__toggle {
@@ -181,11 +185,10 @@
       content: "";
 
       position: absolute;
-      top: 45px;
-      right: 17px;
-
+      top: 39px;
+      right: 21px;
       width: 50px;
-      height: 3px;
+      height: 4px;
 
       background-color: $white;
       box-shadow: 0 9px 0 0 $white, 0 18px 0 0 $white;

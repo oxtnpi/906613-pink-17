@@ -15,8 +15,8 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 43px;
+  margin-bottom: 13px;
 }
 
 .feedback__author-about {
@@ -48,6 +48,7 @@
   .feedback {
     width: 660px;
     margin-top: 49px;
+    padding-bottom: 1px;
   }
 
   .feedback__wrapper {
@@ -83,8 +84,7 @@
   }
 
   .feedback__bullets {
-    margin-top: 43px;
-
+    margin-top: 34px;
     order: 5;
   }
 }

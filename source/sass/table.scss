@@ -254,6 +254,10 @@
     font-size: 18px;
   }
 
+  .table-price__check {
+    padding-right: 10px;
+  }
+
   .table__bullets {
     display: none;
   }
@@ -338,9 +342,5 @@
 
   .table-price__payment-price {
     font-size: 24px;
-  }
-
-  .table-price__check {
-    padding-right: 10px;
   }
 }

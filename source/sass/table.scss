@@ -62,7 +62,7 @@
   color: $white;
   background-color: $dark-two;
   width: 276px;
-  height: 94px;
+  height: 100px;
   margin: 0;
   padding: 0;
   position: relative;
@@ -81,7 +81,7 @@
 }
 
 .table-price__payment-type {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
@@ -91,7 +91,7 @@
 }
 
 .table-price__payment-price {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 30px;
   text-align: center;
@@ -105,12 +105,12 @@
   &::before {
     position: absolute;
     content: "";
-    width: 61px;
-    height: 61px;
+    width: 74px;
+    height: 70px;
     top: -2px;
     left: -2px;
     z-index: 1;
-    background-image: url("../img/bg-hit-tablet.svg");
+    background-image: url("../img/bg-hit.svg");
   }
 
   &::after {
@@ -123,8 +123,8 @@
     line-height: 21px;
     text-align: center;
     color: $white;
-    top: 6px;
-    left: 9px;
+    top: 17px;
+    left: 8px;
     transform: rotate(-45deg);
     background-color: transparent;
     z-index: 2;
@@ -133,7 +133,7 @@
 
 .table-price__cell {
   width: 276px;
-  height: 62px;
+  height: 61px;
   border: 1px solid $grey-light;
   background-color: $white;
 }
@@ -165,8 +165,8 @@
 
 .table-price__check-img--false {
   display: block;
-  width: 24px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   margin: 0 auto;
   fill: $red-no;
 }
@@ -186,8 +186,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-top: 125px;
-    margin-bottom: 70px;
+    margin-top: 132px;
+    margin-bottom: 8px;
   }
 
   .table-price.table-price thead,
@@ -197,12 +197,28 @@
 
   .table-price__header {
     width: 156px;
-    height: 75px;
+    height: 77px;
   }
 
   .table-price__header--empty {
     display: table-cell;
     width: 153px;
+  }
+
+  .table-price__header--best {
+    &::before {
+      width: 64px;
+      height: 60px;
+      top: -2px;
+      left: -2px;
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      top: 8px;
+      left: 7px;
+    }
   }
 
   .table-price__cell {
@@ -249,6 +265,10 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
+
+    &::before {
+      top: 15px;
+    }
   }
 
   .table-price {
@@ -257,7 +277,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 160px;
-    margin-bottom: 98px;
+    margin-bottom: 93px;
   }
 
   .table-price__header {
@@ -301,9 +321,9 @@
 
   .table-price__cell {
     width: 234px;
-    height: 59px;
+    height: 60px;
     margin: 0;
-    padding: 2px 0 0 12px;
+    padding: 2px 0 0 18px;
     font-size: 18px;
   }
 
@@ -313,9 +333,14 @@
 
   .table-price__payment-type {
     font-size: 18px;
+    padding-top: 0;
   }
 
   .table-price__payment-price {
     font-size: 24px;
+  }
+
+  .table-price__check {
+    padding-right: 10px;
   }
 }

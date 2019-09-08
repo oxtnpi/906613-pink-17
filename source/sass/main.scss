@@ -7,17 +7,17 @@
 }
 
 .main__wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .main__text {
   font-size: 24px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 27px;
   text-align: center;
-  color: $dark-two;
-  padding-top: 24px;
-  padding-bottom: 15px;
+  color: #283645;
+  padding-top: 23px;
+  padding-bottom: 10px;
   margin: 0;
 }
 
@@ -30,6 +30,7 @@
   .main {
     width: 660px;
     margin: auto;
+    padding-top: 23px;
   }
 
   .main__text {
@@ -46,12 +47,17 @@
     padding: 0 20px;
     line-height: 45px;
   }
+
+  .main__wrapper {
+    margin-bottom: 47px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main {
     width: auto;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .main__wrapper {

@@ -1,6 +1,8 @@
+var body = document.querySelector('body');
 var menuMain = document.querySelector('.main-menu');
 var menuToggle = document.querySelector('.main-menu__toggle');
 
+body.classList.remove('no-js');
 menuMain.classList.remove('main-menu--nojs');
 
 menuToggle.addEventListener('click', function() {

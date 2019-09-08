@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
 
   <title>HTML Academy: Пинк</title>
 </head>
@@ -18,18 +24,21 @@
   <header class="page-header">
     <nav class="page-header__menu main-menu main-menu--closed main-menu--nojs">
       <div class="main-menu__wrapper">
-        <div class="main-menu__top-bar">
-          <a href="index.html" class="main-menu__logo logo logo--phone  ">
+        <div class="main-menu__top-bar main-menu__top-bar--form">
+          <a href="index.html" class="main-menu__logo logo logo--phone logo--form">
             <svg class="logo-image logo-image--phone" width="75" height="22">
-              description<use xlink:href="#logo-pink-white-mobile"></use>
+                <title>Логотип</title>
+              <use  xlink:href="#logo-pink-white-mobile"></use>
             </svg>
 
             <svg class="logo-image logo-image--tablet" width="147" height="40">
-              description<use xlink:href="#logo-pink-white-tablet"></use>
+                <title>Логотип</title>
+              <use  xlink:href="#logo-pink-white-tablet"></use>
             </svg>
 
             <svg class="logo-image logo-image--desktop" width="147" height="40">
-              description<use xlink:href="#logo-pink-white-desktop"></use>
+                <title>Логотип</title>
+              <use  xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -127,9 +136,9 @@
                 class="form-contacts__label">Номер телефона</label>
               <input id="phone" class="form-contacts__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
             </li>
-            <li class="form-contacts__item form-contacts__item--email"><label for="phone"
+            <li class="form-contacts__item form-contacts__item--email"><label for="email"
                 class="form-contacts__label">Адрес почты</label>
-              <input id="email" class="form-contacts__input" type="email" name="phone" placeholder="Введите почту *"
+              <input id="email" class="form-contacts__input" type="email" name="email" placeholder="Введите почту *"
                 required=""></li>
           </ul>
         </fieldset>
@@ -163,7 +172,7 @@
         </fieldset>
         <button class="form__button" type="submit">Отправить форму</button>
 
-        <p class="form__message"><span class="form__symbol">*</span> — обязательные<span
+        <p class="form__message"><span class="form__symbol">*</span> — обязательные <span
             class="form-section__text-table"> для заполнения</span> поля</p>
       </form>
     </section>
@@ -172,32 +181,37 @@
   <footer class="page-footer">
     <a class="page-footer__logo logo-footer">
       <svg class="page-footer__logo-image logo-footer__image" width="147" height="40">
-        description<use xlink:href="#logo-pink-blue-mobile"></use>
+          <title>Логотип</title>
+        <use  xlink:href="#logo-pink-blue-mobile"></use>
       </svg>
 
       <svg class="logo-footer__image logo-footer__image--desktop" width="147" height="40">
-        description<use xlink:href="#logo-pink-blue-desktop"></use>
+          <title>Логотип</title>
+        <use  xlink:href="#logo-pink-blue-desktop"></use>
       </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link" href="https://twitter.com">
           <svg class="social__icon social__icon--twitter" width="17.5" height="14.663">
-            description<use xlink:href="#icon-twitter"></use>
+              <title>Twitter</title>
+            <use  xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://ru-ru.facebook.com/">
           <svg class="social__icon social__icon--facebook" width="8.673" height="18.944">
-            description<use xlink:href="#icon-facebook"></use>
+              <title>Facebook</title>
+            <use  xlink:href="#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://www.youtube.com/">
           <svg class="social__icon social__icon--youtube" width="14.64" height="13.96">
-            description<use xlink:href="#icon-youtube"></use>
+              <title>Youtube</title>
+            <use  xlink:href="#icon-youtube"></use>
           </svg>
         </a>
       </li>
@@ -206,7 +220,8 @@
     <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
       <svg class="copyright__img" width="26.943" height="34.09">
-        description<use xlink:href="#logo-htmlacademy"></use>
+          <title>HTMLAcademy</title>
+        <use  xlink:href="#logo-htmlacademy"></use>
       </svg>
     </a>
   </footer>

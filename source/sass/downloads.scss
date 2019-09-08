@@ -8,7 +8,7 @@
 
 .downloads__wrapper {
   background-color: $dark-blue;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -27,7 +27,7 @@
   height: 55px;
   border: solid 3px #ffffff;
   border-radius: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   &:hover {
     box-shadow: 0 5px 7px 0 rgba(1, 1, 1, 0.75);
@@ -44,12 +44,15 @@
 
 .downloads__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 281px;
   padding: 0 20px;
   list-style: none;
-  margin: 10px 0;
+  margin: 0;
+  margin-top: 11px;
+  margin-bottom: 4px;
 }
 
 .downloads__description {
@@ -59,6 +62,9 @@
   font-weight: 300;
   color: #ffffff;
   max-width: 280px;
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: $tablet-width) {
@@ -87,17 +93,18 @@
   }
 
   .downloads__description {
+    max-width: 300px;
     font-size: 18px;
     margin: 0;
     margin-top: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 93px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .downloads {
     margin: 0;
-    margin-top: 52px;
+    margin-top: 58px;
     padding: 0;
   }
 
@@ -105,7 +112,7 @@
     font-size: 21px;
     line-height: 18px;
     font-weight: 700;
-    padding: 12px 24px 16px 32px;
+    padding: 12px 25px 16px 25px;
     margin: 0;
     margin-bottom: 57px;
   }
@@ -116,9 +123,8 @@
 
   .downloads__description {
     margin-left: 5px;
-    margin-bottom: 87px;
+    margin-bottom: 110px;
   }
-
 
   .downloads__button:active {
     color: rgba(210, 40, 86, 0.3);

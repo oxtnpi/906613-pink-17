@@ -166,6 +166,10 @@
     padding: 0;
   }
 
+  .main-menu__top-bar--form {
+    height: 110px;
+  }
+
   .main-menu__toggle {
     width: 50px;
     height: 24px;
@@ -266,11 +270,14 @@
     display: flex;
     width: 621px;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 45px;
     border: none;
   }
 
+
   .main-menu__link {
+    display: block;
+    height: 26px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 300;
@@ -281,6 +288,7 @@
   }
 
   .main-menu__link--active {
+    padding-bottom: 4px;
     border-bottom: 1px solid $white;
   }
 

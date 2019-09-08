@@ -6,10 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+
   <title>HTML Academy: Пинк</title>
 </head>
 
-<body>
+<body class="no-js">
   <div style="display: none">
     <include src="build/img/library.svg"></include>
   </div>
@@ -20,15 +27,18 @@
         <div class="main-menu__top-bar">
           <a class="main-menu__logo logo logo--phone">
             <svg class="logo-image logo-image--phone" width="75" height="22">
-              description<use xlink:href="#logo-pink-white-mobile"></use>
+              <title>Логотип</title>
+              <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
 
-            <svg class="logo-image logo-image--tablet" width="147" height="40">
-              description<use xlink:href="#logo-pink-white-tablet"></use>
+            <svg  class="logo-image logo-image--tablet" width="147" height="40">
+              <title>Логотип</title>
+              <use xlink:href="#logo-pink-white-tablet"> </use>
             </svg>
 
             <svg class="logo-image logo-image--desktop" width="147" height="40">
-              description<use xlink:href="#logo-pink-white-desktop"></use>
+              <title>Логотип</title>
+              <use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <button class="main-menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -58,14 +68,16 @@
             <li class="downloads__item">
               <a href="https://apps.apple.com/" class="downloads__link">
                 <svg class="downloads__img" width="47" height="56">
-                  description<use xlink:href="#logo-apple"></use>
+                    <title>Apple</title>
+                  <use xlink:href="#logo-apple"></use>
                 </svg>
               </a>
             </li>
             <li class="downloads__item">
               <a href="https://play.google.com/store" class="downloads__link">
                 <svg class="downloads__img" width="43" height="47">
-                  description<use xlink:href="#logo-android"></use>
+                    <title>Android</title>
+                  <use xlink:href="#logo-android"></use>
                 </svg>
               </a>
             </li>
@@ -73,7 +85,8 @@
             <li class="downloads__item">
               <a href="https://www.microsoft.com/ru-ru/store/apps" class="downloads__link">
                 <svg class="downloads__img" width="44" height="41">
-                  description<use xlink:href="#logo-microsoft"></use>
+                    <title>Microsoft</title>
+                  <use xlink:href="#logo-microsoft"></use>
                 </svg>
               </a>
             </li>
@@ -139,7 +152,7 @@
       </div>
       <div class="advantages__research research">
         <svg class="research__img" width="238" height="276" viewBox="0 0 298 346">
-          description<use xlink:href="#timer"></use>
+          <use xlink:href="#timer"></use>
         </svg>
         <div class="research__description">
           <h3 class="research__title">Эффект<br> на 24 часа!</h3>
@@ -195,8 +208,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Розовый фильтр</span>
                 <div class="table-price__check table-price__check--true">
-                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                    description<use xlink:href="#icon-yes"></use>
+                  <svg class="table-price__check-img" width="21" height="16">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
@@ -206,8 +219,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Розовый фильтр</span>
                 <div class="table-price__check table-price__check--true">
-                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                    description<use xlink:href="#icon-yes"></use>
+                  <svg class="table-price__check-img" width="21" height="16">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
@@ -217,8 +230,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Розовый фильтр</span>
                 <div class="table-price__check table-price__check--true">
-                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                    description<use xlink:href="#icon-yes"></use>
+                  <svg class="table-price__check-img" width="21" height="16">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
@@ -231,8 +244,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Смайлики</span>
                 <div class="table-price__check table-price__check--false">
-                  <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
-                    description<use xlink:href="#icon-no"></use>
+                  <svg class="table-price__check-img table-price__check-img--false" width="26" height="26">
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                   <span class="visually-hidden">Нет</span>
                 </div>
@@ -242,8 +255,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Смайлики</span>
                 <div class="table-price__check table-price__check--true">
-                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                    description<use xlink:href="#icon-yes"></use>
+                  <svg class="table-price__check-img" width="21" height="16">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
@@ -253,8 +266,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Смайлики</span>
                 <div class="table-price__check table-price__check--true">
-                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                    description<use xlink:href="#icon-yes"></use>
+                  <svg class="table-price__check-img" width="21" height="16">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
@@ -267,8 +280,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Комментарии</span>
                 <div class="table-price__check table-price__check--false">
-                  <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
-                    description<use xlink:href="#icon-no"></use>
+                  <svg class="table-price__check-img table-price__check-img--false" width="26" height="26">
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                   <span class="visually-hidden">Нет</span>
                 </div>
@@ -278,8 +291,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Комментарии</span>
                 <div class="table-price__check table-price__check--false">
-                  <svg class="table-price__check-img table-price__check-img--false" width="26.752px" height="26.752px">
-                    description<use xlink:href="#icon-no"></use>
+                  <svg class="table-price__check-img table-price__check-img--false" width="26" height="26">
+                    <use xlink:href="#icon-no"></use>
                   </svg>
                   <span class="visually-hidden">Нет</span>
                 </div>
@@ -289,8 +302,8 @@
               <div class="table-price__wrapper">
                 <span class="table-price__label">Комментарии</span>
                 <div class="table-price__check table-price__check--true">
-                  <svg class="table-price__check-img" width="21.698px" height="16.09px">
-                    description<use xlink:href="#icon-yes"></use>
+                  <svg class="table-price__check-img" width="21" height="16">
+                    <use xlink:href="#icon-yes"></use>
                   </svg>
                   <span class="visually-hidden">Да</span>
                 </div>
@@ -328,41 +341,64 @@
         </ul>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__map-frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2051.50109404019!2d30.319948761281882!3d59.93648297464309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631056267101b%3A0xa9be6d127c1fcba1!2z0KbQtdC90YLRgCDQuNGB0LrRg9GB0YHRgtCy0LAg0Lgg0LzRg9C30YvQutC4INCm0JPQn9CRINC40LwuINCSLtCSLiDQnNCw0Y_QutC-0LLRgdC60L7Qs9C-!5e0!3m2!1sru!2sru!4v1567165842153!5m2!1sru!2sru"
-          width="1200" height="600" style="border:0;" allowfullscreen=""></iframe>
-      </div>
+          <div class="contacts__map-frame contacts__map-frame--no-js">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 960px)"
+              srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img src="img/bg-map-mobile@1x.png"
+              alt="Карта"
+              srcset="img/bg-map-mobile@2x.jpg 2x">
+          </picture>
+          </div>
+          <iframe class="contacts__map-frame contacts__map-frame--js"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2051.50109404019!2d30.319948761281882!3d59.93648297464309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631056267101b%3A0xa9be6d127c1fcba1!2z0KbQtdC90YLRgCDQuNGB0LrRg9GB0YHRgtCy0LAg0Lgg0LzRg9C30YvQutC4INCm0JPQn9CRINC40LwuINCSLtCSLiDQnNCw0Y_QutC-0LLRgdC60L7Qs9C-!5e0!3m2!1sru!2sru!4v1567165842153!5m2!1sru!2sru"
+            width="1200" height="600" style="border: 0;" allowfullscreen=""></iframe>
+        </div>
     </section>
   </main>
   <footer class="page-footer footer-index">
     <a class="page-footer__logo logo-footer">
       <svg class="page-footer__logo-image logo-footer__image" width="147" height="40">
-        description<use xlink:href="#logo-pink-blue-mobile"></use>
+          <title>Логотип</title>
+        <use xlink:href="#logo-pink-blue-mobile"></use>
       </svg>
 
       <svg class="logo-footer__image logo-footer__image--desktop" width="147" height="40">
-        description<use xlink:href="#logo-pink-blue-desktop"></use>
+          <title>Логотип</title>
+        <use xlink:href="#logo-pink-blue-desktop"></use>
       </svg>
     </a>
     <ul class="page-footer__social social">
       <li class="social__item">
         <a class="social__link" href="https://twitter.com">
           <svg class="social__icon social__icon--twitter" width="17.5" height="14.663">
-            description<use xlink:href="#icon-twitter"></use>
+              <title>Twitter</title>
+            <use xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://ru-ru.facebook.com/">
           <svg class="social__icon social__icon--facebook" width="8.673" height="18.944">
-            description<use xlink:href="#icon-facebook"></use>
+              <title>Facebook</title>
+            <use xlink:href="#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link" href="https://www.youtube.com/">
           <svg class="social__icon social__icon--youtube" width="14.64" height="13.96">
-            description<use xlink:href="#icon-youtube"></use>
+              <title>Youtube</title>
+            <use xlink:href="#icon-youtube"></use>
           </svg>
         </a>
       </li>
@@ -371,7 +407,8 @@
     <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       Разработано
       <svg class="copyright__img" width="26.943" height="34.09">
-        description<use xlink:href="#logo-htmlacademy"></use>
+          <title>HTML Academy</title>
+        <use xlink:href="#logo-htmlacademy"></use>
       </svg>
     </a>
   </footer>

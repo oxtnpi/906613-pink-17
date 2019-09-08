@@ -44,6 +44,7 @@
 
 .downloads__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 281px;
@@ -52,7 +53,6 @@
   margin: 0;
   margin-top: 11px;
   margin-bottom: 4px;
-
 }
 
 .downloads__description {
@@ -104,7 +104,7 @@
 @media (min-width: $desktop-width) {
   .downloads {
     margin: 0;
-    margin-top: 52px;
+    margin-top: 58px;
     padding: 0;
   }
 
@@ -112,7 +112,7 @@
     font-size: 21px;
     line-height: 18px;
     font-weight: 700;
-    padding: 12px 24px 16px 32px;
+    padding: 12px 25px 16px 25px;
     margin: 0;
     margin-bottom: 57px;
   }
@@ -123,9 +123,8 @@
 
   .downloads__description {
     margin-left: 5px;
-    margin-bottom: 87px;
+    margin-bottom: 110px;
   }
-
 
   .downloads__button:active {
     color: rgba(210, 40, 86, 0.3);
